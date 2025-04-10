@@ -6,7 +6,7 @@ public class TopQuery {
   public final static int DB_SQL_SERVER = 3;
   public final static int DB_SYBASE = 4;
   public final static int DB_OTHER = 5;
- 
+
   private int dbType = -1;
  
   public static final int NO_MAXIMUM_LIMIT = -1;
@@ -25,14 +25,6 @@ public class TopQuery {
  
   public void setMaxResults(int maxResults) {
     this.maxResults = (maxResults < 0) ? NO_MAXIMUM_LIMIT : maxResults;
-  }
- 
-  public int getMaxResults() {
-    return maxResults;
-  }
- 
-  public int getDbType() {
-    return dbType;
   }
  
   public void setDbType(int dbType) {
